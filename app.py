@@ -12,6 +12,6 @@ genai.configure(api_key=GEMINI_KEY)
 prompt = st.text_input("Ask me anything:")
 
 if st.button("Send"):
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-pro")
     response = model.generate_content(prompt)
     st.write(response.text)
